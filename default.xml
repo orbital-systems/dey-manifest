@@ -1,3 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remote name="digi" fetch="git://git.digi.com/del/yocto"/>
+
+  <project name="meta-digi" path="sources/meta-digi" remote="digi" revision="master"/>
+  <project name="meta-fsl-arm" path="sources/meta-fsl-arm" remote="digi" revision="upstream/master"/>
+  <project name="meta-openembedded" path="sources/meta-openembedded" remote="digi" revision="upstream/master"/>
+  <project name="poky" path="sources/poky" remote="digi" revision="upstream/master"/>
 </manifest>
