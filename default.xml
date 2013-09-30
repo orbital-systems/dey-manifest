@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="digi" fetch="git://git.digi.com/linux/yocto"/>
+  <remote name="digi" fetch="ssh://git@stash.digi.com/dey"/>
 
   <project name="meta-digi" path="sources/meta-digi" remote="digi" revision="master">
     <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>
