@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <default sync-j="4" revision="master"/>
   <remote name="digi" fetch="ssh://git@stash.digi.com/dey"/>
 
   <project name="meta-digi.git" path="sources/meta-digi" remote="digi" revision="master">
