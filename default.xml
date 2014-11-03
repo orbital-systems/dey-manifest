@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <default sync-j="4" revision="daisy"/>
+  <default sync-j="4" revision="dizzy"/>
   <remote name="digi" fetch="ssh://git@stash.digi.com/dey"/>
 
   <project name="meta-digi.git" path="sources/meta-digi" remote="digi" revision="master">
     <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>
   </project>
-  <project name="meta-fsl-arm.git" path="sources/meta-fsl-arm" remote="digi" revision="upstream/daisy"/>
-  <project name="meta-fsl-demos.git" path="sources/meta-fsl-demos" remote="digi" revision="upstream/daisy"/>
-  <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="digi" revision="upstream/daisy"/>
-  <project name="poky.git" path="sources/poky" remote="digi" revision="upstream/daisy"/>
+  <project name="meta-fsl-arm.git" path="sources/meta-fsl-arm" remote="digi" revision="upstream/dizzy"/>
+  <project name="meta-fsl-demos.git" path="sources/meta-fsl-demos" remote="digi" revision="upstream/dizzy"/>
+  <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="digi" revision="upstream/dizzy"/>
+  <project name="poky.git" path="sources/poky" remote="digi" revision="upstream/dizzy"/>
 </manifest>
