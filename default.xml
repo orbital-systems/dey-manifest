@@ -3,11 +3,11 @@
   <default sync-j="4" revision="fido"/>
   <remote name="digi" fetch="ssh://git@stash.digi.com/dey"/>
 
-  <project name="meta-digi.git" path="sources/meta-digi" remote="digi" revision="master">
+  <project name="meta-digi.git" path="sources/meta-digi" remote="digi" revision="refs/tags/dey-1.8.0.1">
     <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>
   </project>
-  <project name="meta-fsl-arm.git" path="sources/meta-fsl-arm" remote="digi" revision="upstream/fido"/>
-  <project name="meta-fsl-demos.git" path="sources/meta-fsl-demos" remote="digi" revision="upstream/fido"/>
-  <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="digi" revision="upstream/fido"/>
-  <project name="poky.git" path="sources/poky" remote="digi" revision="upstream/fido"/>
+  <project name="meta-fsl-arm.git" path="sources/meta-fsl-arm" remote="digi" revision="refs/tags/dey-1.8.0.1"/>
+  <project name="meta-fsl-demos.git" path="sources/meta-fsl-demos" remote="digi" revision="refs/tags/dey-1.8.0.1"/>
+  <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="digi" revision="refs/tags/dey-1.8.0.1"/>
+  <project name="poky.git" path="sources/poky" remote="digi" revision="refs/tags/dey-1.8.0.1"/>
 </manifest>
