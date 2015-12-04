@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <default sync-j="4" revision="refs/tags/dey-2.0.0.1"/>
-  <remote name="fsl"   fetch="git://github.com/Freescale"/>
-  <remote name="oe"    fetch="git://git.openembedded.org"/>
-  <remote name="qt5"   fetch="git://github.com/meta-qt5"/>
-  <remote name="yocto" fetch="git://git.yoctoproject.org"/>
-  <remote name="local" fetch="git://localhost/"/>
+  <default sync-j="4" revision="jethro"/>
+  <remote name="digi" fetch="ssh://git@stash.digi.com/dey"/>
 
-  <project name="meta-digi.git" path="sources/meta-digi" remote="local">
+  <project name="meta-digi.git" path="sources/meta-digi" remote="digi" revision="master">
     <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>
   </project>
-  <project name="meta-fsl-arm.git" path="sources/meta-fsl-arm" remote="yocto" revision="29980a69f092e231ae6075ca48bacaa0eb73bc6a"/>
-  <project name="meta-fsl-demos.git" path="sources/meta-fsl-demos" remote="fsl" revision="2231e946e7a94d096394f2b2477e8184c9bbde7b"/>
-  <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="oe" revision="4fdb203c182dae6f451ca131c0edfd5f0c99fc28"/>
-  <project name="meta-qt5.git" path="sources/meta-qt5" remote="qt5" revision="0454fb083c38f2155a8be3b61930ad1ddf995695"/>
-  <project name="poky.git" path="sources/poky" remote="yocto" revision="fc45deac89ef63ca1c44e763c38ced7dfd72cbe1"/>
+  <project name="meta-fsl-arm.git" path="sources/meta-fsl-arm" remote="digi" revision="upstream/jethro"/>
+  <project name="meta-fsl-demos.git" path="sources/meta-fsl-demos" remote="digi" revision="upstream/jethro"/>
+  <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="digi" revision="upstream/jethro"/>
+  <project name="meta-qt5.git" path="sources/meta-qt5" remote="digi" revision="upstream/jethro"/>
+  <project name="poky.git" path="sources/poky" remote="digi" revision="upstream/jethro"/>
 </manifest>
