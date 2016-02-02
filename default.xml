@@ -3,12 +3,12 @@
   <default sync-j="4" revision="jethro"/>
   <remote name="digi" fetch="ssh://git@stash.digi.com/dey"/>
 
-  <project name="meta-digi.git" path="sources/meta-digi" remote="digi" revision="refs/tags/dey-2.0-r1.1">
+  <project name="meta-digi.git" path="sources/meta-digi" remote="digi" revision="dey-2.0/maint">
     <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>
   </project>
-  <project name="meta-fsl-arm.git" path="sources/meta-fsl-arm" remote="digi" revision="refs/tags/dey-2.0-r1.1"/>
-  <project name="meta-fsl-demos.git" path="sources/meta-fsl-demos" remote="digi" revision="refs/tags/dey-2.0-r1.1"/>
-  <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="digi" revision="refs/tags/dey-2.0-r1.1"/>
-  <project name="meta-qt5.git" path="sources/meta-qt5" remote="digi" revision="refs/tags/dey-2.0-r1.1"/>
-  <project name="poky.git" path="sources/poky" remote="digi" revision="refs/tags/dey-2.0-r1.1"/>
+  <project name="meta-fsl-arm.git" path="sources/meta-fsl-arm" remote="digi" revision="upstream/jethro"/>
+  <project name="meta-fsl-demos.git" path="sources/meta-fsl-demos" remote="digi" revision="upstream/jethro"/>
+  <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="digi" revision="upstream/jethro"/>
+  <project name="meta-qt5.git" path="sources/meta-qt5" remote="digi" revision="upstream/jethro"/>
+  <project name="poky.git" path="sources/poky" remote="digi" revision="upstream/jethro"/>
 </manifest>
