@@ -3,7 +3,7 @@
   <default sync-j="4" revision="jethro"/>
   <remote name="digi" fetch="ssh://git@stash.digi.com/dey"/>
 
-  <project name="meta-digi.git" path="sources/meta-digi" remote="digi" revision="master">
+  <project name="meta-digi.git" path="sources/meta-digi" remote="digi" revision="dey-2.0/maint">
     <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>
   </project>
   <project name="meta-fsl-arm.git" path="sources/meta-fsl-arm" remote="digi" revision="upstream/jethro"/>
