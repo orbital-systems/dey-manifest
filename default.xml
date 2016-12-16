@@ -10,5 +10,6 @@
   <project name="meta-fsl-demos.git" path="sources/meta-fsl-demos" remote="digi" revision="upstream/jethro"/>
   <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="digi" revision="upstream/jethro"/>
   <project name="meta-qt5.git" path="sources/meta-qt5" remote="digi" revision="upstream/jethro"/>
+  <project name="meta-swupdate.git" path="sources/meta-swupdate" remote="digi" revision="upstream/jethro"/>
   <project name="poky.git" path="sources/poky" remote="digi" revision="upstream/jethro"/>
 </manifest>
