@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <default sync-j="4" revision="jethro"/>
+  <default sync-j="4" revision="morty"/>
   <remote name="digi" fetch="ssh://git@stash.digi.com/dey"/>
 
-  <project name="meta-digi.git" path="sources/meta-digi" remote="digi" revision="dey-2.0/master">
+  <project name="meta-digi.git" path="sources/meta-digi" remote="digi" revision="dey-2.2/master">
     <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>
   </project>
-  <project name="meta-fsl-arm.git" path="sources/meta-fsl-arm" remote="digi" revision="upstream/jethro"/>
-  <project name="meta-fsl-demos.git" path="sources/meta-fsl-demos" remote="digi" revision="upstream/jethro"/>
-  <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="digi" revision="upstream/jethro"/>
-  <project name="meta-qt5.git" path="sources/meta-qt5" remote="digi" revision="upstream/jethro"/>
-  <project name="meta-swupdate.git" path="sources/meta-swupdate" remote="digi" revision="upstream/jethro"/>
-  <project name="poky.git" path="sources/poky" remote="digi" revision="upstream/jethro"/>
+  <project name="meta-freescale.git" path="sources/meta-freescale" remote="digi" revision="upstream/morty"/>
+  <project name="meta-fsl-demos.git" path="sources/meta-fsl-demos" remote="digi" revision="upstream/morty"/>
+  <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="digi" revision="upstream/morty"/>
+  <project name="meta-qt5.git" path="sources/meta-qt5" remote="digi" revision="upstream/morty"/>
+  <project name="meta-swupdate.git" path="sources/meta-swupdate" remote="digi" revision="upstream/morty"/>
+  <project name="poky.git" path="sources/poky" remote="digi" revision="upstream/morty"/>
 </manifest>
