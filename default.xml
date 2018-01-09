@@ -6,8 +6,8 @@
   <project name="meta-digi.git" path="sources/meta-digi" remote="digi" revision="dey-2.4/master">
     <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>
   </project>
-  <project name="meta-freescale.git" path="sources/meta-freescale" remote="digi" revision="upstream/rocko"/>
-  <project name="meta-fsl-demos.git" path="sources/meta-fsl-demos" remote="digi" revision="upstream/rocko"/>
+  <project name="meta-freescale.git" path="sources/meta-freescale" remote="digi" revision="upstream/master-next"/>
+  <project name="meta-fsl-demos.git" path="sources/meta-fsl-demos" remote="digi" revision="upstream/master-next"/>
   <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="digi" revision="upstream/rocko"/>
   <project name="meta-qt5.git" path="sources/meta-qt5" remote="digi" revision="upstream/rocko"/>
   <project name="meta-swupdate.git" path="sources/meta-swupdate" remote="digi" revision="upstream/rocko"/>
