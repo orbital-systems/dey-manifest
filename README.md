@@ -30,7 +30,7 @@ Note: You can get your primary user and group using the id command.
 3. Use repo to download Digi Embedded Yocto.
 
 ```
-$ repo init -u https://github.com/digi-embedded/dey-manifest.git -b rocko
+$ repo init -u https://github.com/digi-embedded/dey-manifest.git -b rocko_experimental
 $ repo sync -j8 --no-repo-verify
 ```
 
