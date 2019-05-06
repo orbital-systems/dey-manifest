@@ -2,6 +2,7 @@
 <manifest>
   <default sync-j="4" revision="rocko"/>
 
+  <remote name="orbital" fetch="ssh://git@github.com" />
   <remote name="digi"  fetch="git://github.com/digi-embedded"/>
   <remote name="fsl"   fetch="git://github.com/Freescale"/>
   <remote name="qt5"   fetch="git://github.com/meta-qt5"/>
@@ -9,6 +10,7 @@
   <remote name="oe"    fetch="git://git.openembedded.org"/>
   <remote name="yocto" fetch="git://git.yoctoproject.org"/>
 
+  <project name="orbital-systems/meta-orbital" path="sources/meta-orbital" remote="orbital" revision="master"/>
   <project name="meta-digi.git" path="sources/meta-digi" remote="digi" revision="rocko">
     <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>
   </project>
