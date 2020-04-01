@@ -2,7 +2,7 @@ Digi Embedded Yocto (DEY) manifest
 ==================================
 
 This repository contains the manifest files for the Digi Embedded Yocto
-distribution for [Digi's Embedded modules](https://www.digi.com/products/embedded-systems).
+distribution modified for use by Orbital Systems.
 
 Installing Digi Embedded Yocto
 ------------------------------
@@ -19,23 +19,24 @@ Follow these steps to install Digi Embedded Yocto:
     ```
 
 2. Create an installation folder with user write permissions; for example,
-    `/usr/local/dey-2.4` and navigate to that folder.
+    `~/src/dey` and navigate to that folder.
 
     ```
-    $ sudo install -o <your-user> -g <your-group> -d /usr/local/dey-2.4
-    $ cd /usr/local/dey-2.4
+    $ mkdir ~/src/dey
+    $ cd ~/src/dey
     ```
-
-    Note: You can get your primary user and group using the `id` command.
 
 3. Use repo to download Digi Embedded Yocto.
 
     ```
-    $ repo init -u https://github.com/digi-embedded/dey-manifest.git -b rocko
+    $ repo init -u https://github.com/orbital-systems/dey-manifest.git -b orbital
     $ repo sync -j8 --no-repo-verify
     ```
 
-More information about [Digi Embedded Yocto](https://github.com/digi-embedded/meta-digi).
+4. Setup build environment
+   ```
+   $ source setup.sh
+   ```
 
 License
 -------
