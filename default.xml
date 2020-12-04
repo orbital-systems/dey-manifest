@@ -17,10 +17,12 @@
   <project name="orbital-systems/meta-digi" path="sources/meta-digi" remote="orbital" revision="thud">
     <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>
   </project>
+  <project name="orbital-systems/meta-swupdate" path="sources/meta-digi" remote="orbital" revision="thud"/>
+
+
   <project name="meta-freescale.git"    path="sources/meta-freescale"    remote="yocto" revision="thud"/>
   <project name="meta-fsl-demos.git"    path="sources/meta-fsl-demos"    remote="fsl"   revision="thud"/>
   <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="oe"    revision="thud"/>
   <project name="meta-qt5.git"          path="sources/meta-qt5"          remote="qt5"   revision="thud"/>
-  <project name="meta-swupdate.git"     path="sources/meta-swupdate"     remote="swu"   revision="thud"/>
   <project name="poky.git"              path="sources/poky"              remote="yocto" revision="thud"/>
 </manifest>
