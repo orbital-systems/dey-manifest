@@ -17,7 +17,7 @@
   <project name="orbital-systems/meta-digi" path="sources/meta-digi" remote="orbital" revision="thud">
     <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>
   </project>
-  <project name="orbital-systems/meta-swupdate" path="sources/meta-digi" remote="orbital" revision="thud"/>
+  <project name="orbital-systems/meta-swupdate" path="sources/meta-swupdate" remote="orbital" revision="thud"/>
 
 
   <project name="meta-freescale.git"    path="sources/meta-freescale"    remote="yocto" revision="thud"/>
