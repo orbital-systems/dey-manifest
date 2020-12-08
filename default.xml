@@ -1,28 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <default sync-j="4" revision="thud"/>
-
-  <remote name="orbital" fetch="ssh://git@github.com" />
-
-  <remote name="digi"  fetch="git://github.com/digi-embedded"/>
-  <remote name="fsl"   fetch="git://github.com/Freescale"/>
-  <remote name="qt5"   fetch="git://github.com/meta-qt5"/>
-  <remote name="swu"   fetch="git://github.com/sbabic"/>
-  <remote name="oe"    fetch="git://git.openembedded.org"/>
+  <remote name="digi" fetch="git://github.com/digi-embedded"/>
+  <remote name="fsl" fetch="git://github.com/Freescale"/>
+  <remote name="oe" fetch="git://git.openembedded.org"/>
+  <remote name="orbital" fetch="ssh://git@github.com"/>
+  <remote name="qt5" fetch="git://github.com/meta-qt5"/>
+  <remote name="swu" fetch="git://github.com/sbabic"/>
   <remote name="yocto" fetch="git://git.yoctoproject.org"/>
 
+  <default revision="thud" sync-j="4"/>
+
+  <project name="meta-freescale.git" path="sources/meta-freescale" remote="yocto" revision="07d4a6baa23ec3a1f013f8a070130598b56aec7c" upstream="thud" dest-branch="thud"/>
+  <project name="meta-fsl-demos.git" path="sources/meta-fsl-demos" remote="fsl" revision="4a244af3993ae662624c6f615464e6806cc719a2" upstream="thud" dest-branch="thud"/>
+  <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="oe" revision="446bd615fd7cb9bc7a159fe5c2019ed08d1a7a93" upstream="thud" dest-branch="thud"/>
+  <project name="meta-qt5.git" path="sources/meta-qt5" remote="qt5" revision="e6e464c9ed9266ce46452f953c1bdcb0e7b2d95f" upstream="thud" dest-branch="thud"/>
+  <project name="meta-swupdate.git" path="sources/meta-swupdate" remote="swu" revision="0aaa82c7f407e577d777a0a8df781c098d7d8ed0" upstream="thud" dest-branch="thud"/>
+
+  <project name="orbital-systems/meta-digi" path="sources/meta-digi" remote="orbital" revision="28ce9340f55a35199dacf1bcbf83dc016b6a2fc7" upstream="thud" dest-branch="thud">
+    <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>
+  </project>
   <project name="orbital-systems/meta-orbital" path="sources/meta-orbital" remote="orbital" revision="master">
     <copyfile src="sdk/setup.sh" dest="setup.sh"/>
   </project>
-  <project name="orbital-systems/meta-digi" path="sources/meta-digi" remote="orbital" revision="thud">
-    <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>
-  </project>
-  <project name="orbital-systems/meta-swupdate" path="sources/meta-swupdate" remote="orbital" revision="thud"/>
-
-
-  <project name="meta-freescale.git"    path="sources/meta-freescale"    remote="yocto" revision="thud"/>
-  <project name="meta-fsl-demos.git"    path="sources/meta-fsl-demos"    remote="fsl"   revision="thud"/>
-  <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="oe"    revision="thud"/>
-  <project name="meta-qt5.git"          path="sources/meta-qt5"          remote="qt5"   revision="thud"/>
-  <project name="poky.git"              path="sources/poky"              remote="yocto" revision="thud"/>
+  <project name="poky.git" path="sources/poky" remote="yocto" revision="e52122a3e6912575ff401a4af6ac1bf3070092bc" upstream="thud" dest-branch="thud"/>
 </manifest>
