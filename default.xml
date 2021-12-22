@@ -1,25 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <default sync-j="8" revision="zeus"/>
+  <default sync-j="8" revision="gatesgarth"/>
 
   <remote name="digi" fetch="git://github.com/digi-embedded"/>
   <remote name="fsl" fetch="git://github.com/Freescale"/>
-  <remote name="oe" fetch="git://git.openembedded.org"/>
-  <remote name="orbital" fetch="ssh://git@github.com"/>
+  <!-- <remote name="igl"   fetch="https://github.com/Igalia"/> -->
+  <!-- <remote name="nxp"   fetch="git://source.codeaurora.org/external/imx"/> -->
   <remote name="qt5" fetch="git://github.com/meta-qt5"/>
   <remote name="swu" fetch="git://github.com/sbabic"/>
+  <remote name="oe" fetch="git://git.openembedded.org"/>
   <remote name="yocto" fetch="git://git.yoctoproject.org"/>
+  <remote name="orbital" fetch="ssh://git@github.com"/>
 
-  <project name="meta-freescale.git"    path="sources/meta-freescale"    remote="yocto" />
-  <project name="meta-fsl-demos.git"    path="sources/meta-fsl-demos"    remote="fsl" />
-  <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="oe" />
-  <project name="meta-qt5.git"          path="sources/meta-qt5"          remote="qt5" />
-  <project name="meta-swupdate.git"     path="sources/meta-swupdate"     remote="swu" revision="8ad6a75e1778cdda671b3d6aea2a9692613020ec"/>
   <project name="meta-digi.git"         path="sources/meta-digi"         remote="digi">
     <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>
   </project>
-  <project name="orbital-systems/meta-orbital" path="sources/meta-orbital" remote="orbital" revision="zeus">
+  <!-- <project name="meta-digi-dualboot.git" path="sources/meta-digi-dualboot" remote="digi" /> -->
+  <project name="meta-freescale.git"    path="sources/meta-freescale"    remote="yocto" />
+  <project name="meta-fsl-demos.git"    path="sources/meta-fsl-demos"    remote="fsl" />
+  <!-- <project name="meta-imx.git" path="sources/meta-imx" remote="nxp" revision="gatesgarth-5.10.9-1.0.0"/> -->
+  <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="oe" />
+  <project name="meta-python2.git"      path="sources/meta-python2"      remote="oe"/>
+  <project name="meta-qt5.git"          path="sources/meta-qt5"          remote="qt5" />
+  <!-- <project name="meta-selinux.git" path="sources/meta-selinux" remote="yocto" /> -->
+  <project name="meta-swupdate.git"     path="sources/meta-swupdate"     remote="swu"/>
+  <!-- <project name="meta-webkit.git" path="sources/meta-webkit" remote="igl" /> -->
+  <project name="poky.git"              path="sources/poky"              remote="yocto" />
+  <project name="orbital-systems/meta-orbital" path="sources/meta-orbital" remote="orbital">
     <copyfile src="sdk/setup.sh" dest="setup.sh"/>
   </project>
-  <project name="poky.git" path="sources/poky" remote="yocto" />
 </manifest>
