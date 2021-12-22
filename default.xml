@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <default sync-j="8" revision="zeus"/>
+
   <remote name="digi" fetch="git://github.com/digi-embedded"/>
   <remote name="fsl" fetch="git://github.com/Freescale"/>
   <remote name="oe" fetch="git://git.openembedded.org"/>
@@ -8,17 +10,15 @@
   <remote name="swu" fetch="git://github.com/sbabic"/>
   <remote name="yocto" fetch="git://git.yoctoproject.org"/>
 
-  <default revision="thud" sync-j="4"/>
-
   <project name="meta-freescale.git"    path="sources/meta-freescale"    remote="yocto" />
   <project name="meta-fsl-demos.git"    path="sources/meta-fsl-demos"    remote="fsl" />
   <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="oe" />
   <project name="meta-qt5.git"          path="sources/meta-qt5"          remote="qt5" />
-  <project name="meta-swupdate.git"     path="sources/meta-swupdate"     remote="swu" revision="bfe8133749c8bd444aab2372f1dd737eb35454c3"/>
+  <project name="meta-swupdate.git"     path="sources/meta-swupdate"     remote="swu" revision="8ad6a75e1778cdda671b3d6aea2a9692613020ec"/>
   <project name="meta-digi.git"         path="sources/meta-digi"         remote="digi">
     <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>
   </project>
-  <project name="orbital-systems/meta-orbital" path="sources/meta-orbital" remote="orbital" revision="master">
+  <project name="orbital-systems/meta-orbital" path="sources/meta-orbital" remote="orbital" revision="zeus">
     <copyfile src="sdk/setup.sh" dest="setup.sh"/>
   </project>
   <project name="poky.git" path="sources/poky" remote="yocto" />
