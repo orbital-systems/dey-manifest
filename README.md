@@ -29,7 +29,7 @@ Follow these steps to install Digi Embedded Yocto:
 3. Use repo to download Digi Embedded Yocto.
 
     ```
-    $ repo init -u https://github.com/orbital-systems/dey-manifest.git -b orbital
+    $ repo init -u https://github.com/orbital-systems/dey-manifest.git -b master
     $ repo sync -j8 --no-repo-verify
     ```
 
