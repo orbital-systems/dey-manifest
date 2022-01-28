@@ -19,7 +19,7 @@
   <project name="orbital-systems/meta-digi" path="sources/meta-digi" remote="orbital" revision="28ce9340f55a35199dacf1bcbf83dc016b6a2fc7" upstream="thud" dest-branch="thud">
     <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>
   </project>
-  <project name="orbital-systems/meta-orbital" path="sources/meta-orbital" remote="orbital" revision="master">
+  <project name="orbital-systems/meta-orbital" path="sources/meta-orbital" remote="orbital" revision="9">
     <copyfile src="sdk/setup.sh" dest="setup.sh"/>
   </project>
   <project name="poky.git" path="sources/poky" remote="yocto" revision="e52122a3e6912575ff401a4af6ac1bf3070092bc" upstream="thud" dest-branch="thud"/>
