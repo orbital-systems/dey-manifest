@@ -10,6 +10,7 @@
   <remote name="swu" fetch="https://github.com/sbabic"/>
   <remote name="oe" fetch="git://git.openembedded.org"/>
   <remote name="yocto" fetch="https://git.yoctoproject.org"/>
+  <remote name="aws" fetch="https://github.com/aws"/>
   <remote name="orbital" fetch="ssh://git@github.com"/>
 
   <project name="meta-digi.git"         path="sources/meta-digi"         remote="digi">
@@ -26,6 +27,7 @@
   <project name="meta-swupdate.git"     path="sources/meta-swupdate"     remote="swu"/>
   <!-- <project name="meta-webkit.git" path="sources/meta-webkit" remote="igl" /> -->
   <project name="poky.git"              path="sources/poky"              remote="yocto" />
+  <project name="meta-aws.git"          path="sources/meta-aws"          remote="aws" />
   <project name="orbital-systems/meta-orbital" path="sources/meta-orbital" remote="orbital" revision="master">
     <copyfile src="sdk/setup.sh" dest="setup.sh"/>
   </project>
