@@ -28,7 +28,7 @@
   <!-- <project name="meta-webkit.git" path="sources/meta-webkit" remote="igl" /> -->
   <project name="poky.git"              path="sources/poky"              remote="yocto" />
   <project name="meta-aws.git"          path="sources/meta-aws"          remote="aws" />
-  <project name="orbital-systems/meta-orbital" path="sources/meta-orbital" remote="orbital" revision="master">
+  <project name="orbital-systems/meta-orbital" path="sources/meta-orbital" remote="orbital" revision="11">
     <copyfile src="sdk/setup.sh" dest="setup.sh"/>
   </project>
 </manifest>
