@@ -13,21 +13,21 @@
   <remote name="aws" fetch="https://github.com/aws"/>
   <remote name="orbital" fetch="ssh://git@github.com"/>
 
-  <project name="meta-digi.git"         path="sources/meta-digi"         remote="digi">
+  <project name="meta-digi.git"         path="sources/meta-digi"         remote="digi"  revision="d64f6455deeb68c44a042e82d780b18f36fc2113">
     <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>
   </project>
   <!-- <project name="meta-digi-dualboot.git" path="sources/meta-digi-dualboot" remote="digi" /> -->
-  <project name="meta-freescale.git"    path="sources/meta-freescale"    remote="yocto" />
-  <project name="meta-fsl-demos.git"    path="sources/meta-fsl-demos"    remote="fsl" />
+  <project name="meta-freescale.git"    path="sources/meta-freescale"    remote="yocto" revision="d5a82541a97dd3a6b9116a1cd72f9965510a3de9" />
+  <project name="meta-fsl-demos.git"    path="sources/meta-fsl-demos"    remote="fsl"   revision="50eb2b32e7702bc435049bfe0a98fc65c864c106" />
   <!-- <project name="meta-imx.git" path="sources/meta-imx" remote="nxp" revision="gatesgarth-5.10.9-1.0.0"/> -->
-  <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="oe" />
-  <project name="meta-python2.git"      path="sources/meta-python2"      remote="oe"/>
-  <project name="meta-qt5.git"          path="sources/meta-qt5"          remote="qt5" />
+  <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="oe"    revision="f3f7a5f1a4713f145107bb043e0d14cb3a51c62f" />
+  <project name="meta-python2.git"      path="sources/meta-python2"      remote="oe"    revision="3fae17aece0e6d82f56965fe501bf7080c671df8"/>
+  <project name="meta-qt5.git"          path="sources/meta-qt5"          remote="qt5"   revision="5d70466cc7d74369956dceacdfd89f41516860d0" />
   <!-- <project name="meta-selinux.git" path="sources/meta-selinux" remote="yocto" /> -->
-  <project name="meta-swupdate.git"     path="sources/meta-swupdate"     remote="swu"/>
+  <project name="meta-swupdate.git"     path="sources/meta-swupdate"     remote="swu"   revision="744d6b96fc0290a7df9045e60c734c4924abfd4a"/>
   <!-- <project name="meta-webkit.git" path="sources/meta-webkit" remote="igl" /> -->
-  <project name="poky.git"              path="sources/poky"              remote="yocto" />
-  <project name="meta-aws.git"          path="sources/meta-aws"          remote="aws" />
+  <project name="poky.git"              path="sources/poky"              remote="yocto" revision="13143ea85a1ab7703825c0673128c05845b96cb5" />
+  <project name="meta-aws.git"          path="sources/meta-aws"          remote="aws"   revision="5ada0fdacb86313c565cffbb12a0f2265205d345" />
   <project name="orbital-systems/meta-orbital" path="sources/meta-orbital" remote="orbital" revision="11">
     <copyfile src="sdk/setup.sh" dest="setup.sh"/>
   </project>
