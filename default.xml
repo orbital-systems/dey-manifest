@@ -12,7 +12,7 @@
   <remote name="yocto" fetch="https://git.yoctoproject.org"/>
   <remote name="orbital" fetch="ssh://git@github.com"/>
 
-  <project name="meta-digi.git"         path="sources/meta-digi"         remote="digi"  revision="9e68d61f7c465800d62913c044e43c541f2eacd7">
+  <project name="meta-digi.git"         path="sources/meta-digi"         remote="digi"  revision="d64f6455deeb68c44a042e82d780b18f36fc2113">
     <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>
   </project>
   <!-- <project name="meta-digi-dualboot.git" path="sources/meta-digi-dualboot" remote="digi" /> -->
