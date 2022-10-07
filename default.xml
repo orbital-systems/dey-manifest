@@ -30,5 +30,6 @@
   <project name="meta-aws.git"          path="sources/meta-aws"          remote="aws" />
   <project name="orbital-systems/meta-orbital" path="sources/meta-orbital" remote="orbital" revision="master">
     <copyfile src="sdk/setup.sh" dest="setup.sh"/>
+    <copyfile src="sdk/start_docker.sh" dest="start_docker.sh"/>
   </project>
 </manifest>
