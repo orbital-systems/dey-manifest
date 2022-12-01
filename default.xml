@@ -10,7 +10,7 @@
   <remote name="swu" fetch="https://github.com/sbabic"/>
   <remote name="oe" fetch="git://git.openembedded.org"/>
   <remote name="yocto" fetch="https://git.yoctoproject.org"/>
-  <remote name="aws" fetch="https://github.com/aws"/>
+  <remote name="aws" fetch="https://github.com/aws4embeddedlinux"/>
   <remote name="orbital" fetch="ssh://git@github.com"/>
 
   <project name="meta-digi.git"         path="sources/meta-digi"         remote="digi"  revision="9350358f5b0815971d2086d12524a9924a96cfd8">
