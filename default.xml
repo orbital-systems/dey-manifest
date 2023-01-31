@@ -1,31 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <default sync-j="8" revision="gatesgarth"/>
+  <default sync-j="8" revision="kirkstone"/>
 
   <remote name="digi" fetch="https://github.com/digi-embedded"/>
   <!-- <remote name="fsl" fetch="https://github.com/Freescale"/> -->
   <!-- <remote name="igl"   fetch="https://github.com/Igalia"/> -->
-  <!-- <remote name="nxp"   fetch="git://source.codeaurora.org/external/imx"/> -->
+  <!-- <remote name="nxp"   fetch="https://github.com/nxp-imx"/> -->
   <!-- <remote name="qt5" fetch="https://github.com/meta-qt5"/> -->
   <remote name="swu" fetch="https://github.com/sbabic"/>
-  <remote name="oe" fetch="git://git.openembedded.org"/>
+  <!-- <remote name="stm"   fetch="https://github.com/STMicroelectronics"/> -->
+  <remote name="timesys" fetch="https://github.com/TimesysGit"/>
+  <remote name="wlf"   fetch="https://github.com/wolfSSL"/>
+  <remote name="oe"    fetch="https://git.openembedded.org"/>
   <remote name="yocto" fetch="https://git.yoctoproject.org"/>
   <remote name="aws" fetch="https://github.com/aws"/>
   <remote name="orbital" fetch="ssh://git@github.com"/>
 
-  <project name="meta-digi.git"         path="sources/meta-digi"         remote="digi"  revision="9350358f5b0815971d2086d12524a9924a96cfd8">
+
+  <project name="meta-digi.git"         path="sources/meta-digi"         remote="digi"  revision="kirkstone">
     <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>
   </project>
-  <!-- <project name="meta-digi-dualboot.git" path="sources/meta-digi-dualboot" remote="digi" /> -->
   <project name="meta-freescale.git"    path="sources/meta-freescale"    remote="yocto" />
   <!-- <project name="meta-fsl-demos.git"    path="sources/meta-fsl-demos"    remote="fsl" /> -->
-  <!-- <project name="meta-imx.git" path="sources/meta-imx" remote="nxp" revision="gatesgarth-5.10.9-1.0.0"/> -->
-  <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="oe" />
-  <!-- <project name="meta-python2.git"      path="sources/meta-python2"      remote="oe"/> -->
+  <!-- <project name="meta-imx.git" path="sources/meta-imx" remote="nxp" revision="kirkstone-5.15.52-2.1.0"/> -->
+  <!-- <project name="meta-st-stm32mp.git" path="sources/meta-st-stm32mp" remote="stm" revision="1becb4e422555dc9735c65cc0a0f0d2d534bcc43"/> -->
+  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe"/>
   <!-- <project name="meta-qt5.git"          path="sources/meta-qt5"          remote="qt5" /> -->
   <!-- <project name="meta-selinux.git" path="sources/meta-selinux" remote="yocto" /> -->
   <project name="meta-swupdate.git"     path="sources/meta-swupdate"     remote="swu"/>
+  <project name="meta-timesys.git"      path="sources/meta-timesys" remote="timesys"/>
   <!-- <project name="meta-webkit.git" path="sources/meta-webkit" remote="igl" /> -->
+  <project name="meta-wolfssl.git"      path="sources/meta-wolfssl" remote="wlf"/>
   <project name="poky.git"              path="sources/poky"              remote="yocto" />
   <project name="meta-aws.git"          path="sources/meta-aws"          remote="aws" />
   <project name="orbital-systems/meta-orbital" path="sources/meta-orbital" remote="orbital" revision="master">
