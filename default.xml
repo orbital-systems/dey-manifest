@@ -9,8 +9,8 @@
   <!-- <remote name="qt5" fetch="https://github.com/meta-qt5"/> -->
   <remote name="swu" fetch="https://github.com/sbabic"/>
   <!-- <remote name="stm"   fetch="https://github.com/STMicroelectronics"/> -->
-  <remote name="timesys" fetch="https://github.com/TimesysGit"/>
-  <remote name="wlf"   fetch="https://github.com/wolfSSL"/>
+  <!-- <remote name="timesys" fetch="https://github.com/TimesysGit"/> -->
+  <!-- <remote name="wlf"   fetch="https://github.com/wolfSSL"/> -->
   <remote name="oe"    fetch="https://git.openembedded.org"/>
   <remote name="yocto" fetch="https://git.yoctoproject.org"/>
   <remote name="aws" fetch="https://github.com/aws"/>
@@ -28,9 +28,9 @@
   <!-- <project name="meta-qt5.git"          path="sources/meta-qt5"          remote="qt5" /> -->
   <!-- <project name="meta-selinux.git" path="sources/meta-selinux" remote="yocto" /> -->
   <project name="meta-swupdate.git"     path="sources/meta-swupdate"     remote="swu"/>
-  <project name="meta-timesys.git"      path="sources/meta-timesys" remote="timesys"/>
+  <!-- <project name="meta-timesys.git"      path="sources/meta-timesys" remote="timesys"/> -->
   <!-- <project name="meta-webkit.git" path="sources/meta-webkit" remote="igl" /> -->
-  <project name="meta-wolfssl.git"      path="sources/meta-wolfssl" remote="wlf"/>
+  <!-- <project name="meta-wolfssl.git"      path="sources/meta-wolfssl" remote="wlf"/> -->
   <project name="poky.git"              path="sources/poky"              remote="yocto" />
   <project name="meta-aws.git"          path="sources/meta-aws"          remote="aws" />
   <project name="orbital-systems/meta-orbital" path="sources/meta-orbital" remote="orbital" revision="master">
