@@ -29,13 +29,18 @@ Follow these steps to install Digi Embedded Yocto:
 3. Use repo to download Digi Embedded Yocto.
 
     ```
-    $ repo init -u https://github.com/orbital-systems/dey-manifest.git -b master
+    $ repo init -u git@github.com:orbital-systems/dey-manifest.git -b master
     $ repo sync -j8 --no-repo-verify
     ```
 
 4. Setup build environment
    ```
    $ source setup.sh
+   ```
+
+5. Build the swu upgrade image
+   ```
+   $ bitbake orbital-image-swu orbital-image-desktop-swu
    ```
 
 License
