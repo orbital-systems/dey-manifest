@@ -17,23 +17,23 @@
   <remote name="orbital" fetch="ssh://git@github.com"/>
 
 
-  <project name="meta-digi.git"         path="sources/meta-digi"         remote="digi"  revision="kirkstone">
+  <project name="meta-digi.git"         path="sources/meta-digi"         remote="digi"  revision="04f8e544001360a527f414ff5885f3cd19ae92b7"> <!-- This represents dey-4.0-r3.2 -->
     <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>
   </project>
-  <project name="meta-freescale.git"    path="sources/meta-freescale"    remote="yocto" />
+  <project name="meta-freescale.git"    path="sources/meta-freescale"    remote="yocto" revision="c2f8db8019848c5f42fd55447407beb8a1353a43"/>
   <!-- <project name="meta-fsl-demos.git"    path="sources/meta-fsl-demos"    remote="fsl" /> -->
   <!-- <project name="meta-imx.git" path="sources/meta-imx" remote="nxp" revision="kirkstone-5.15.52-2.1.0"/> -->
   <!-- <project name="meta-st-stm32mp.git" path="sources/meta-st-stm32mp" remote="stm" revision="1becb4e422555dc9735c65cc0a0f0d2d534bcc43"/> -->
-  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe"/>
+  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="bdad2a789e30703a825b876279665720d06d55dc"/>
   <!-- <project name="meta-qt5.git"          path="sources/meta-qt5"          remote="qt5" /> -->
   <!-- <project name="meta-selinux.git" path="sources/meta-selinux" remote="yocto" /> -->
-  <project name="meta-swupdate.git"     path="sources/meta-swupdate"     remote="swu"/>
+  <project name="meta-swupdate.git"     path="sources/meta-swupdate"     remote="swu" revision="d1d4abfaf82d37c31e3cec3602d6d8d56d105185"/>
   <!-- <project name="meta-timesys.git"      path="sources/meta-timesys" remote="timesys"/> -->
   <!-- <project name="meta-webkit.git" path="sources/meta-webkit" remote="igl" /> -->
   <!-- <project name="meta-wolfssl.git"      path="sources/meta-wolfssl" remote="wlf"/> -->
-  <project name="poky.git"              path="sources/poky"              remote="yocto" />
-  <project name="meta-aws.git"          path="sources/meta-aws"          remote="aws" />
-  <project name="orbital-systems/meta-orbital" path="sources/meta-orbital" remote="orbital" revision="master">
+  <project name="poky.git"              path="sources/poky"              remote="yocto" revision="43b94d2b8496eae6e512c6deb291b5908b7ada47"/>
+  <project name="meta-aws.git"          path="sources/meta-aws"          remote="aws" revision="e0e80b6df49a69ba11a362ed9eb911f05b84cd7f"/>
+  <project name="orbital-systems/meta-orbital" path="sources/meta-orbital" remote="orbital" revision="14">
     <copyfile src="sdk/setup.sh" dest="setup.sh"/>
     <copyfile src="sdk/start_docker.sh" dest="start_docker.sh"/>
   </project>
