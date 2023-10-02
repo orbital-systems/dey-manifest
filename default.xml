@@ -17,7 +17,7 @@
   <remote name="orbital" fetch="ssh://git@github.com"/>
 
 
-  <project name="meta-digi.git"         path="sources/meta-digi"         remote="digi"  revision="kirkstone">
+  <project name="meta-digi.git"         path="sources/meta-digi"         remote="digi"  revision="04f8e544001360a527f414ff5885f3cd19ae92b7"> <!-- This represents dey-4.0-r3.2 -->
     <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>
   </project>
   <project name="meta-freescale.git"    path="sources/meta-freescale"    remote="yocto" />
@@ -27,7 +27,7 @@
   <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe"/>
   <!-- <project name="meta-qt5.git"          path="sources/meta-qt5"          remote="qt5" /> -->
   <!-- <project name="meta-selinux.git" path="sources/meta-selinux" remote="yocto" /> -->
-  <project name="meta-swupdate.git"     path="sources/meta-swupdate"     remote="swu"/>
+  <project name="meta-swupdate.git"     path="sources/meta-swupdate"     remote="swu" revision="a9ab7e077a1dfc85cf2782f20e8b6016009d5345"/>
   <!-- <project name="meta-timesys.git"      path="sources/meta-timesys" remote="timesys"/> -->
   <!-- <project name="meta-webkit.git" path="sources/meta-webkit" remote="igl" /> -->
   <!-- <project name="meta-wolfssl.git"      path="sources/meta-wolfssl" remote="wlf"/> -->
