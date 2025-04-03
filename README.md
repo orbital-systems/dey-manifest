@@ -34,9 +34,27 @@ Follow these steps to install Digi Embedded Yocto:
     ```
 
 4. Setup build environment
+   This is the default way of setting up the build environment. It requires that all the tools needed
+   for building are installed locally on your machine.
+
    ```
    $ source setup.sh
    ```
+
+   The alternate way does not require this. Instead, if you do not already have it, install docker. Then
+   run the script
+
+   ```
+   $ ./start_docker.sh
+   ```
+
+   The script will create the docker image, start it and throw you into a bash shell inside it. It
+   will even tell you how to build the project. The environment is already correctly setup.
+
+   If you would like to use this method from vs code, it is possible. It requires some additional setup.
+   One way to do it is to start the docker environment like above and then use
+   `Dev Containers: Attach to Running Container`. Then you have to set up a build script yourself, which
+   sources the `setup.sh` script and runs `bitbake` to build your image.
 
 5. Build the swu upgrade image
    ```
