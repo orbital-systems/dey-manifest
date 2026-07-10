@@ -33,7 +33,7 @@
   <!-- <project name="meta-wolfssl.git"      path="sources/meta-wolfssl" remote="wlf"/> -->
   <project name="poky.git"              path="sources/poky"              remote="yocto" revision="d847c8aac132c557e93933c10c51a4caa397f52a" />
   <project name="meta-aws.git"          path="sources/meta-aws"          remote="aws" revision="e0e80b6df49a69ba11a362ed9eb911f05b84cd7f" />
-  <project name="orbital-systems/meta-orbital" path="sources/meta-orbital" remote="orbital" revision="18">
+  <project name="orbital-systems/meta-orbital" path="sources/meta-orbital" remote="orbital" revision="daniel/18-without-savings-anim">
     <copyfile src="sdk/setup.sh" dest="setup.sh"/>
     <copyfile src="sdk/start_docker.sh" dest="start_docker.sh"/>
   </project>
